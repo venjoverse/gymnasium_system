@@ -220,6 +220,9 @@ $totalStudents = (int)$pdo->query('SELECT COUNT(*) FROM Attendees')->fetchColumn
 $totalEvents = (int)$pdo->query('SELECT COUNT(*) FROM Events')->fetchColumn();
 $insideNow = (int)$pdo->query('SELECT COUNT(*) FROM Attendance WHERE TimeOut IS NULL')->fetchColumn();
 
+
+// Map each event to the current student's attendance record so actions
+// can be shown on the matching event card.
 $students = [];
 $staffAttendance = [];
 $myAttendance = [];
@@ -231,8 +234,6 @@ if ($isStaff) {
     $stmt->execute([(int)$_SESSION['attendee_id']]);
     $myAttendance = $stmt->fetchAll();
 
-    // Map each event to the current student's attendance record so actions
-    // can be shown on the matching event card.
     $attendanceByEvent = [];
     foreach ($myAttendance as $attendanceRecord) {
         $attendanceByEvent[(int)$attendanceRecord['EventID']] = $attendanceRecord;
