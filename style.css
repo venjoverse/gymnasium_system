@@ -27,7 +27,6 @@ button {
     cursor: pointer;
 }
 
-/* Layout */
 .layout {
     display: flex;
     min-height: 100vh;
@@ -155,7 +154,6 @@ h1 {
     white-space: nowrap;
 }
 
-/* Stats and panels */
 .stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -214,7 +212,6 @@ h1 {
     gap: 12px;
 }
 
-/* Buttons */
 .btn,
 .button,
 button {
@@ -347,7 +344,6 @@ textarea {
     margin-bottom: 10px;
 }
 
-/* Event cards */
 .event-card {
     display: flex;
     align-items: center;
@@ -419,7 +415,6 @@ textarea {
     font-weight: bold;
 }
 
-/* Tables */
 .table-wrap {
     width: 100%;
     overflow-x: auto;
@@ -518,7 +513,6 @@ footer {
     font-size: 12px;
 }
 
-/* Auth pages */
 .auth-page,
 .login-page {
     min-height: 100vh;
@@ -591,7 +585,6 @@ footer {
     width: 100%;
 }
 
-/* General form pages */
 .container {
     width: 100%;
     max-width: 900px;
@@ -655,7 +648,6 @@ footer {
     margin-top: 24px;
 }
 
-/* Responsive */
 @media (max-width: 1000px) {
     .sidebar {
         width: 170px;

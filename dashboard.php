@@ -266,7 +266,7 @@ if ($isStaff && isset($_GET['edit_student'])) {
 <body>
 <div class="layout">
     <aside class="sidebar">
-        <div class="brand"><div class="brand-mark">GE</div><div><strong>Gymnasium Events</strong><small>Attendance management</small></div></div>
+        <div class="brand"><div class="brand-mark">GE</div><div><strong>Gymnasium Events</strong><small>Attendance Management</small></div></div>
         <nav class="nav">
             <?php if ($isStaff): ?>
                 <a class="<?= $page === 'dashboard' ? 'active' : '' ?>" href="dashboard.php?page=dashboard">Dashboard</a>

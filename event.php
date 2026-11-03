@@ -90,7 +90,6 @@ if (isset($_POST['save'])) {
             <div class="full">
 
                 <label>Event Name</label>
-
                 <input
                     type="text"
                     name="event_name"
@@ -103,7 +102,6 @@ if (isset($_POST['save'])) {
             <div class="full">
 
                 <label>Description</label>
-
                 <textarea
                     name="description"
                     maxlength="500"
@@ -115,7 +113,6 @@ if (isset($_POST['save'])) {
             <div>
 
                 <label>Event Date</label>
-
                 <input
                     type="date"
                     name="event_date"
@@ -127,7 +124,6 @@ if (isset($_POST['save'])) {
             <div>
 
                 <label>Venue</label>
-
                 <input
                     type="text"
                     name="venue"
@@ -139,7 +135,6 @@ if (isset($_POST['save'])) {
             <div>
 
                 <label>Start Time</label>
-
                 <input
                     type="time"
                     name="start_time"
@@ -151,7 +146,6 @@ if (isset($_POST['save'])) {
             <div>
 
                 <label>End Time</label>
-
                 <input
                     type="time"
                     name="end_time"
